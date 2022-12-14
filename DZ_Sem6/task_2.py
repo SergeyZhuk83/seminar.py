@@ -3,12 +3,22 @@
 # b = ( 'a' , 'b' , 'c')
 # c = ( '2', '3')
 
+# a = ( "a", 'b', '2', '3' ,'c')
+# string = []
+# number = []
+# for i in a :
+#     if i.isdigit() :
+#        number.append(i)
+#     else : string.append(i)
+# print(number)  
+# print(string)     
+
 a = ( "a", 'b', '2', '3' ,'c')
-string = []
-number = []
-for i in a :
-    if i.isdigit() :
-       number.append(i)
-    else : string.append(i)
-print(number)  
-print(string)     
+b = ( 'a' , 'b' , 'c')
+c = ( '2', '3')
+
+b = filter(str.isalpha, a)
+c = filter(str.isdigit, a)
+
+print(*b)
+print(*c)
